@@ -1,0 +1,529 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+.nav-links a:hover {
+  color: #d70f64;
+}
+.btn-nav {
+  border: 1px solid #fd0b70;
+  background-color: #fd0b70;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn-nav:hover {
+  background-color: #bf0c57;
+  border-color: #bf0c57;
+}
+nav i {
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+}
+nav i:hover {
+  color: #d70f64;
+}
+
+/* --- Hero Section --- */
+.partner-hero {
+  background: url("https://www.foodpanda.com/wp-content/uploads/2025/07/join-panda-partner-to-grow-restaurant-sales.png");
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.partner-hero-content {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.partner-hero h1 {
+  color: #fffdfd;
+  font-size: 52px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+.partner-btn {
+  background-color: #fd0b70;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.partner-btn:hover {
+  background-color: #bf0c57;
+  color: #ffffff;
+}
+
+/* --- Intro Text --- */
+
+.intro-section {
+  text-align: center;
+  padding: 40px 0;
+  background-color: #e4e0e0;
+}
+.intro-text {
+  max-width: 1000px;
+  text-align: center;
+  padding: 0 20px;
+  margin: 0 auto;
+  width: 100%;
+}
+.intro-text h2 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.intro-text p {
+  color: #333;
+  font-size: 15px;
+}
+
+/* --- Country Pills --- */
+.country-pills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 0 20px 60px 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 100px;
+  
+}
+
+.pill {
+  background: transparent;
+  border: 2px solid #bf0c57;
+  color: #fd0b70;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+
+.pill:hover {
+  background: #fd0b70;
+  color: #fff;
+}
+.pill.active {
+  background: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+/* --- Why Partner --- */
+.why-partner {
+  padding: 80px 0;
+}
+.why-title {
+  padding-left: 5%;
+  margin-bottom: 50px;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.why-reasons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0 5%;
+}
+
+.why-reason-card {
+  position: relative;
+  height: 350px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.why-reason-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.why-reason-card:hover img {
+  transform: scale(1.05);
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+}
+
+/* --- How It Works --- */
+.how-it-works {
+  background: var(--light-bg);
+  padding: 80px 0;
+  /* text-align: center; */
+}
+.how-title {
+  font-size: 42px;
+  padding: 0 5%;
+  margin-bottom: 50px;
+}
+.how-steps-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 0 5%;
+}
+
+.how-step-box {
+  flex: 1;
+  /* min-width: 220px; */
+  background: white;
+  padding: 0 3%;
+  border-radius: 12px;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.image-wrap {
+  font-size: 32px;
+  color: #000;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+.step-num {
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.step-desc {
+  font-size: 24px;
+  /* max-width: ; */
+  font-weight: 700;
+  color: #555;
+}
+
+/* --- FAQ Section --- */
+.question-section {
+  padding: 80px 0;
+}
+.question-title {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.question-lists {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.question-list {
+  border-bottom: 1px solid #ccc;
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+.summry {
+  font-weight: 900;
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+/* footer  */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 5%;
+}
+.footer-logo img {
+  width: 150px;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+.footer-col h4 {
+  font-size: 14px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+.footer-col h5 {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.footer-col ul li {
+  margin-right: 50px;
+}
+.footer-col ul li {
+  list-style-type: none;
+}
+.social-icons span {
+  margin-right: 15px;
+}
+.copyright {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* contec-Hero Section */
+.contect-hero {
+  height: 350px;
+  background: url("https://www.foodpanda.com/wp-content/uploads/2025/07/fp-contact.webp")
+    center/cover;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.contect-hero-text {
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  padding: 40px 100px;
+}
+
+.contect-hero-text h1 {
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+/* Contact Form Section */
+.contact-section {
+  padding: 60px 100px;
+}
+
+.contect-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contect-form {
+  width: 50%;
+}
+
+.contect-form h3 {
+  margin-bottom: 30px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-input-group {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-input-group span {
+  font-size: 12px;
+  color: #666;
+}
+
+.submit-btn {
+  background: #ff2b85;
+  color: white;
+  border: none;
+  padding: 12px 35px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.panda-image img {
+  width: 500px;
+  padding: 0 5%;
+  text-align: center;
+}
+
+@media (max-width: 786px) {
+
+  /* NAVBAR */
+  nav {
+    display: flex;
+    gap: 15px;
+    /* padding: 15px; */
+  }
+
+  .nav-links {
+   display: none;
+    
+  }
+  .btn-nav {
+    display: none;
+  }
+
+  /* HERO */
+  .partner-hero {
+    height: auto;
+  }
+
+  .partner-hero-content {
+    padding: 40px 20px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .partner-hero h1 {
+    font-size: 28px;
+  }
+
+  /* INTRO */
+  .intro-text h2 {
+    font-size: 26px;
+  }
+
+  /* COUNTRY PILLS */
+  .country-pills {
+    margin-top: 40px;
+  }
+
+  /* WHY PARTNER */
+  .why-title {
+    font-size: 26px;
+    padding-left: 20px;
+  }
+
+  .why-reason-card {
+    height: 250px;
+  }
+
+  /* HOW IT WORKS */
+  .how-title {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .how-step-box {
+    margin-bottom: 20px;
+  }
+
+  .step-desc {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  /* FAQ */
+  .question-title {
+    font-size: 26px;
+  }
+
+  .summry {
+    font-size: 18px;
+  }
+
+  /* CONTACT HERO */
+  .contect-hero-text {
+    padding: 30px 20px;
+  }
+
+  .contect-hero-text h1 {
+    font-size: 28px;
+  }
+
+  /* CONTACT FORM */
+  .contact-section {
+    padding: 40px 20px;
+  }
+
+  .contect-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .contect-form {
+    width: 100%;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .panda-image img {
+    width: 100%;
+  }
+
+  /* FOOTER */
+  .copyright {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}
+
