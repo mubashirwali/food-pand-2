@@ -1,0 +1,517 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --panda-pink: #D70F64;
+    --light-pink: #fdf2f7;
+    --text-dark: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 35px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-dark);
+    margin: 0 15px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.nav-links i {
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+.pink-text {
+    color: var(--panda-pink);
+    font-weight: bold;
+}
+
+.saved-jobs a {
+    text-decoration: none;
+    color: var(--panda-pink);
+}
+
+/* Hero Section */
+.hero {
+    background-color: #ffb2bb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 10%;
+    min-height: 400px;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.search-bar {
+    display: flex;
+    background: white;
+    border-radius: 30px;
+    padding: 5px 15px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 12px;
+    flex-grow: 1;
+    border-radius: 30px;
+}
+
+.search-btn {
+    background: var(--panda-pink);
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.hero-panda img {
+    height: 250px;
+}
+/* Vision / Mission */
+.vision-container {
+    text-align: center;
+    padding: 80px 20%;
+}
+
+.vision-container h2 {
+    font-style: italic;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+/* Layout Rows */
+.content-row {
+    display: flex;
+    align-items: center;
+    padding: 60px 10%;
+    gap: 50px;
+}
+
+.content-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.content-text {
+    flex: 1;
+}
+
+.content-text h3 {
+    color: #D70F64;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.content-text p {
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.content-img-box {
+    flex: 1;
+}
+
+.content-img-box img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+/* Container ko relative rakhna zaroori hai taake panda iske andar set ho */
+.panda-btn-container {
+    position: relative;
+    display: inline-block;
+    margin-top: 50px; /* Thodi jagah upar se taake panda nazar aaye */
+}
+
+/* Panda ki image ki setting */
+.peeking-panda {
+    position: absolute;
+    width: 80px;      /* Panda ka size */
+    top: -45px;       /* Button ke thoda upar set karne ke liye */
+    left: 15px;       /* Left side par adjust karne ke liye */
+    z-index: 0;       /* Isko button ke peechhe rakhne ke liye */
+    pointer-events: none; /* Taake panda par click karne se button disturb na ho */
+}
+
+/* Pink Button ka design */
+.panda-button {
+    position: relative;
+    z-index: 1;       /* Panda ke upar nazar aane ke liye */
+    background-color: #D70F64; /* foodpanda Pink */
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 50px; /* Full round shape */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(215, 15, 100, 0.3); /* Soft pink shadow */
+    transition: transform 0.2s ease;
+}
+
+/* Hover effect */
+.panda-button:hover {
+    transform: scale(1.05); /* Click karne par thoda bada hoga */
+    background-color: #be0d59;
+}
+
+
+/* Stats Styling */
+.stats-outer {
+    background-color: #ffb2bb;
+    padding: 80px 10%;
+    text-align: center;
+    position: relative;
+}
+.stats-outer h3{
+    font-size: 32px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+.stat-box {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #ffd1e1;
+}
+
+.stat-box h4 {
+    font-size: 32px;
+    color: #D70F64;
+}
+
+.stat-box span {
+    font-size: 12px;
+    font-weight: bold;
+    color: #666;
+}
+
+.stat-panda-icon {
+    position: absolute;
+    right: 10%;
+    top: 25%;
+    transform: translateY(-50%);
+}
+
+.stat-panda-icon img {
+    height: 200px;
+}
+
+
+/* Job Cards */
+.roles-area {
+     padding: 0px 5%;
+    /* text-align: center; */
+ } 
+.roles-area h3{
+    font-size: 48px;
+    font-weight: 700;
+    color: #FF2BB5;
+    padding: 0px 5%;
+    margin-top: 50px;
+
+}
+
+.jobs-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.job-card {
+    border: 1px solid #eee;
+    padding: 40px 20px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: left;
+    position: relative;
+}
+
+.job-card h4 {
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.job-card p {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.read-btn {
+    width: 100%;
+    background: #D70F64;
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+
+/* Stories Section */
+.stories-area {
+    padding: 60px 10%;
+    background: #fff;
+    text-align: center;
+}
+
+.stories-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.story-card {
+    text-align: left;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.story-card img {
+    width: 100%;
+}
+
+.story-content {
+    padding: 20px;
+}
+
+.story-content .date {
+    font-size: 12px;
+    color: #D70F64;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.story-content h5 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.story-content a {
+    color: #D70F64;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.view-all-btn {
+    background: #D70F64;
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+/* Footer Exact Styles */
+.main-footer {
+    background: #000;
+    color: #fff;
+    padding: 60px 10% 20px;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.footer-links a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer-search {
+    position: relative;
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    height: 40px;
+}
+
+.footer-search input {
+    border: none;
+    outline: none;
+    width: 100%;
+    /* height: 30px; */
+}
+
+.footer-search i {
+    color: #333;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    font-size: 13px;
+}
+
+
+@media (max-width: 786px) {
+
+  /* NAVBAR */
+  .navbar {
+    padding: 15px 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .nav-links {
+   display: none;
+  }
+
+  
+
+  /* HERO */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .hero-panda img {
+    height: 180px;
+  }
+
+  .search-bar {
+    max-width: 100%;
+  }
+
+  /* VISION */
+  .vision-container {
+    padding: 50px 20px;
+  }
+
+  /* CONTENT ROWS */
+  .content-row,
+  .content-row.reverse {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .content-text h3 {
+    font-size: 22px;
+  }
+
+  /* PANDA BUTTON */
+  .panda-btn-container {
+    margin-top: 30px;
+  }
+
+  .peeking-panda {
+    width: 60px;
+    top: -35px;
+  }
+
+  /* STATS */
+  .stats-outer {
+    padding: 50px 20px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-panda-icon {
+    display: none;
+  }
+
+  /* JOBS */
+  .roles-area h3 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .jobs-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .job-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /* STORIES */
+  .stories-area {
+    padding: 40px 20px;
+  }
+
+  .stories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* FOOTER */
+  .main-footer {
+    padding: 40px 20px;
+  }
+
+  .footer-links {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+}
