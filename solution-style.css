@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* --- Navbar --- */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #333;
+}
+.nav-logo img {
+  width: 150px;
+  height: auto;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.nav-links a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  text-decoration: none;
+}
+.nav-links a:hover {
+  color: #d70f62;
+}
+.nav-btn {
+  padding: 10px 20px;
+  background-color: #ee0c6a;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.nav-btn a{
+  color: #fff;
+  text-decoration: none;
+}
+.nav-btn a:hover {
+  background-color:#c70a55 ;
+  color: #fff;
+}
+.nav-btn:hover {
+  background-color: #c70a55;
+  color: #fff;
+}
+nav i {
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 10%;
+    background-color: #eeecec;
+}
+
+.hero h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.hero p {
+    color: #666;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #000000;
+}
+/* reach section */
+.rech-section{
+    text-align: center;
+    padding: 0px 5%;
+}
+.reach-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #000000;
+    text-align: center;
+}
+.raech-cards {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+.raech-card {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    
+}
+.raech-card img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 15px;
+}
+.raech-card h3{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #000000;
+}
+.raech-card p {
+    font-size: 14px;
+    color: #333;
+}
+
+
+
+/* --- Country Pills --- */
+.country-pills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 0 20px 60px 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 100px;
+ 
+}
+.country-text {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.pill {
+  background: transparent;
+  border: 2px solid #bf0c57;
+  color: #fd0b70;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+
+.pill:hover {
+  background: #fd0b70;
+  color: #fff;
+}
+.pill.active {
+  background: #bf0c57;
+  color: #fff;
+  border-color: #bf0c57;
+}
+/* --- Join Team Section --- */
+.join-section {
+  display: flex;
+  align-items: center;
+  background: #eeecec;
+  padding: 80px 5%;
+  gap: 50px;
+}
+
+.join-text {
+  flex: 1;
+}
+.join-text h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.join-text p {
+  margin-bottom: 25px;
+}
+
+.join-image {
+  flex: 1;
+}
+.join-image img {
+  width: 100%;
+  border-radius: 12px;
+}
+.join-btn {
+  border: 1px solid #fd0b70;
+  background-color: #fd0b70;
+  color: #ffffff;
+  padding: 10px 30px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.join-btn:hover {
+  background-color: #bf0c57;
+  border-color: #bf0c57;
+}
+
+/* --- Advertising Section --- */
+.advertising-section{
+  background-color: #fff0f6;
+  padding: 60px 5%;
+  text-align: center;
+}
+.advertising-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+.advertising-content h3 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #000;
+}
+.advertising-btn{
+    padding: 15px 30px;
+    background-color: #ee0c6a;
+    color: #ffffff;
+    font-weight: 700;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.advertising-btn:hover{
+    background-color: #c70a55;
+    color: #fff;
+}
+
+
+/* --- Footer --- */
+
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 60px 80px;
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    margin-bottom: 40px;
+}
+
+.footer-links-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 80px; /* Space between columns */
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Pink Contact Button */
+.contact-btn {
+    background-color: #D70F64; /* Foodpanda pink */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #b50d55;
+}
+
+/* LinkedIn Icon */
+.social-icons a {
+    color: white;
+    font-size: 28px;
+    text-decoration: none;
+}
+
+/* Copyright Section */
+.footer-bottom {
+    margin-top: 60px;
+    font-size: 14px;
+    color: #ffffff;
+}

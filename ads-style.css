@@ -1,0 +1,489 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* --- Navbar --- */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #333;
+}
+.nav-logo img {
+  width: 150px;
+  height: auto;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.nav-links a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  text-decoration: none;
+}
+.nav-links a:hover {
+  color: #d70f62;
+}
+.nav-btn {
+  padding: 10px 20px;
+  background-color: #ee0c6a;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.nav-btn a{
+  color: #fff;
+  text-decoration: none;
+}
+.nav-btn a:hover {
+  background-color:#c70a55 ;
+  color: #fff;
+}
+.nav-btn:hover {
+  background-color: #c70a55;
+  color: #fff;
+}
+nav i {
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+}
+
+/* --- Hero Section --- */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://pandaads.foodpanda.com/wp-content/uploads/2024/05/foodpanda-panda-ads.webp");
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  padding: 0 5%;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.hero p {
+  max-width: 500px;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+.hero-btn {
+  padding: 15px 30px;
+  background-color: #ee0c6a;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.hero-btn:hover {
+  background-color: #c70a55;
+  color: #fff;
+}
+
+/* --- Stats Section --- */
+.stats-section {
+  padding: 80px 5%;
+  text-align: center;
+}
+
+.stats-section h2 {
+  font-size: 52px;
+  font-weight: 900;
+  margin-bottom: 50px;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  display: flex;
+  flex-direction: column;
+}
+.stat-number {
+  font-size: 72px;
+  font-weight: 900;
+  color: #000;
+}
+.stat-label {
+  font-size: 18px;
+  color: #000;
+  font-weight: 900;
+}
+
+/* --- Features section --- */
+.features-section {
+  background-color: #f8f3f3;
+  padding: 80px 5%;
+  text-align: center;
+}
+
+.features-section h3 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.icons-grid {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.icon-item {
+  max-width: 300px;
+}
+.icon-item h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.icon-item p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* --- Solutions Sections  --- */
+.solutions-section {
+  padding: 80px 5%;
+}
+.solution-title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+.solution-row {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 80px;
+}
+
+.solution-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.solution-image {
+  flex: 1;
+}
+.solution-image img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.solution-text {
+  flex: 1;
+}
+.solution-text h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.solution-text p {
+  color: #222;
+  margin-bottom: 25px;
+}
+.solution-btn{
+    padding: 12px 25px;
+    background-color: #ee0c6a;
+    color: #ffffff;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.solution-btn:hover{
+    background-color: #c70a55;
+    color: #fff;
+}
+
+
+/* --- Proven section --- */
+.proven-section {
+  background-color: #f8f3f3;
+  padding: 0px 5%;
+  text-align: center;
+  padding-bottom: 80px;
+}
+.proven-section h2 {
+  margin-bottom: 50px;
+  font-size: 48px;
+  font-weight: 700;
+  padding-top: 80px;
+  text-align: center;
+
+}
+
+.proven-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.proven-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 350px;
+  text-align: left;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.proven-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.proven-card.proven-card-text {
+  padding: 25px;
+}
+.proven-card h4 {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  padding: 0px 5%;
+}
+.proven-btn{
+    padding: 10px 20px;
+    background-color: #ee0c6a;
+    color: #ffffff;
+    font-weight: 700;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+.proven-btn:hover{
+    background-color: #c70a55;
+    color: #fff;
+}
+
+/* --- Customers Section --- */
+.customers-section {
+  padding: 80px 5%;
+  text-align: center;
+}
+.customers-section h2 {
+  margin-bottom: 50px;
+  font-size: 48px;
+  font-weight: 700;
+
+}
+
+.customer-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.customer-box {
+  max-width: 350px;
+  padding: 30px;
+  background: white;
+  /* border: 1px solid #eee; */
+  border-radius: 10px;
+}
+.customer-box p {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 20px;
+}
+.customer-box img{
+    width: 120px;
+    height: auto;
+    margin-top: 10px;
+    display: block;
+    margin-left: 80px;
+}
+.customer-box .author {
+  font-weight: 700;
+  font-size: 12px;
+  color: #999;
+  text-transform: uppercase;
+}
+
+/* --- Advertising Section --- */
+.advertising-section{
+  background-color: #fff0f6;
+  padding: 60px 5%;
+  text-align: center;
+}
+.advertising-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+.advertising-content h3 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #000;
+}
+.advertising-btn{
+    padding: 15px 30px;
+    background-color: #ee0c6a;
+    color: #ffffff;
+    font-weight: 700;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.advertising-btn:hover{
+    background-color: #c70a55;
+    color: #fff;
+}
+
+/* brand-section  */
+.brands-section {
+  padding: 60px 5%;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+.brands-section h3 {
+  margin-bottom: 30px;
+  font-size: 42px;
+  font-weight: 700;
+  color: #000;
+}
+.brands-images {
+  display: flex;
+  justify-content: center;
+  /* gap: 40px; */
+  flex-wrap: wrap;
+  color: #999;
+  font-weight: 700;
+  font-size: 20px;
+}
+.brands-images img{
+    width: 130px;
+    height: auto;
+}
+.brands-images img:hover{
+    transition: transform 0.3s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* --- Footer --- */
+
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 60px 80px;
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    margin-bottom: 40px;
+}
+
+.footer-links-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 80px; /* Space between columns */
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Pink Contact Button */
+.contact-btn {
+    background-color: #D70F64; /* Foodpanda pink */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #b50d55;
+}
+
+/* LinkedIn Icon */
+.social-icons a {
+    color: white;
+    font-size: 28px;
+    text-decoration: none;
+}
+
+/* Copyright Section */
+.footer-bottom {
+    margin-top: 60px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+
+
+
+/* --- Responsive --- */
+

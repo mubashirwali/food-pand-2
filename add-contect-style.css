@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* --- Navbar --- */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #333;
+}
+.nav-logo img {
+  width: 150px;
+  height: auto;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.nav-links a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  text-decoration: none;
+}
+.nav-links a:hover {
+  color: #d70f62;
+}
+.nav-btn {
+  padding: 10px 20px;
+  background-color: #ee0c6a;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.nav-btn:hover {
+  background-color: #c70a55;
+  color: #fff;
+}
+nav i {
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    /* background-color: #D70F64; */
+    /* background-image: radial-gradient(circle at top left, #FF2B85, #D70F64); */
+    background-image: url('https://pandaads.foodpanda.com/wp-content/uploads/2024/06/panda_ads_meet_bg_optD_v4-scaled.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 500px;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: right;
+}
+
+.roi-badge {
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.roi-badge span {
+    display: block;
+    font-size: 80px;
+}
+
+/* Form Section */
+.form-section {
+    padding: 50px 0;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.submit-container {
+    text-align: right;
+    margin-top: 30px;
+}
+
+.btn-submit {
+    background: #FF2B85;
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* --- Footer --- */
+
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 60px 80px;
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    margin-bottom: 40px;
+}
+
+.footer-links-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 80px; /* Space between columns */
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Pink Contact Button */
+.contact-btn {
+    background-color: #D70F64; /* Foodpanda pink */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #b50d55;
+}
+
+/* LinkedIn Icon */
+.social-icons a {
+    color: white;
+    font-size: 28px;
+    text-decoration: none;
+}
+
+/* Copyright Section */
+.footer-bottom {
+    margin-top: 60px;
+    font-size: 14px;
+    color: #ffffff;
+}
