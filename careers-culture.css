@@ -1,0 +1,394 @@
+/* Prefix 'fp-' used for everything */
+* {
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+.navbar {
+    background-color: #fff;
+    padding: 15px 50px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+}
+
+.nav-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 35px;
+    margin-right: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s;
+}
+
+.nav-links li a i {
+    font-size: 12px;
+    color: #888;
+}
+
+.nav-links li a:hover {
+    color: #d70f64; /* foodpanda pink */
+}
+
+/* Dropdown Menu styling */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    list-style: none;
+    padding: 10px 0;
+    min-width: 150px;
+    border-radius: 4px;
+    display: none; /* Default hidden */
+    z-index: 100;
+}
+
+.dropdown-menu li {
+    padding: 8px 20px;
+}
+
+.dropdown-menu li a {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Saved Jobs Section */
+.saved-jobs {
+    margin-left: auto;
+}
+
+.saved-jobs a {
+    text-decoration: none;
+    color: #d70f64;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.saved-jobs i {
+    font-size: 18px;
+}
+
+
+.fp-hero {
+  background-color: #ff2b85;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fp-hero-text {
+  color: white;
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.fp-section-padding {
+  padding: 60px 10%;
+}
+.fp-text-center {
+  text-align: center;
+}
+.fp-pink-title {
+  color: #ff2b85;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+.fp-intro-p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Values Grid */
+.fp-values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 0 10% 40px;
+  width: 100%;
+}
+.fp-val-card {
+  text-align: center;
+  width: 330px;
+}
+.fp-val-img img {
+  width: 330px;
+  height: 130px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+
+}
+
+/* Specific Colors from image */
+.fp-bg-black {
+  background: #1a1a1a;
+}
+.fp-bg-pink-light {
+  background: #ff9cdb;
+}
+.fp-bg-pink-dark {
+  background: #d11b6a;
+}
+.fp-bg-vibes {
+  background: linear-gradient(to right, #ff2b85, #ff9cdb);
+}
+.fp-bg-fast {
+  background: #ff7bc1;
+}
+.fp-bg-humble {
+  background: #b8005d;
+}
+
+.fp-val-h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+.fp-val-p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.fp-btn-main {
+  background: #ff2b85;
+  color: white;
+  border: none;
+  padding: 14px 45px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.fp-margin-bottom {
+  margin-bottom: 80px;
+}
+
+/* Testimonial Section */
+.fp-testimonial-bg {
+  background-color: #fff;
+  padding: 40px 10%;
+  display: flex;
+  justify-content: center;
+}
+.fp-testimonial-box {
+  display: flex;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 1000px;
+}
+.fp-testi-left {
+  width: 40%;
+}
+.fp-testi-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.fp-testi-right {
+  width: 60%;
+  padding: 50px;
+  position: relative;
+}
+.fp-quote {
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+.fp-author-name {
+  color: #ff2b85;
+  font-size: 1.2rem;
+  margin: 0;
+}
+.fp-author-role {
+  color: #888;
+  font-size: 0.9rem;
+}
+.fp-slider-arrows {
+  margin-top: 20px;
+  color: #ccc;
+}
+.fp-slider-arrows i {
+  margin-right: 15px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+/* Jobs Section */
+.fp-bg-grey {
+  background-color: #f7f7f7;
+}
+.fp-jobs-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 50px;
+}
+.fp-job-card {
+  background: white;
+  padding: 40px 25px 25px;
+  border-radius: 12px;
+  position: relative;
+  border: 1px solid #ff2b85;
+  text-align: left;
+}
+.fp-star-icon {
+  position: absolute;
+  width: 50px;
+  right: 20px;
+  top: 20px;
+  color: #ff2b85;
+  cursor: pointer;
+}
+.fp-panda-logo-box {
+  width: 50px;
+  height: 55px;
+  border-radius: 50%;
+  border: 1px solid #ff2b85;
+  background: white;
+  position: absolute;
+  top: -27px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff2b85;
+  font-size: 1.5rem;
+}
+.fp-panda-logo-box img {
+  width: 40px;
+}
+.fp-job-title {
+  font-size: 1.05rem;
+  margin: 15px 0;
+  height: 50px;
+}
+.fp-job-location {
+  color: #888;
+  font-size: 0.9rem;
+  margin-bottom: 25px;
+}
+.fp-job-location i {
+  color: #ff2b85;
+  margin-right: 5px;
+}
+.fp-btn-read {
+  background: #ff2b85;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Footer Exact Styles */
+.main-footer {
+    background: #000;
+    color: #fff;
+    padding: 60px 10% 20px;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.footer-links a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer-search {
+    position: relative;
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    height: 40px;
+}
+
+.footer-search input {
+    border: none;
+    outline: none;
+    width: 100%;
+    /* height: 30px; */
+}
+
+.footer-search i {
+    color: #333;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    font-size: 13px;
+}
+
+
+/* Responsive */
+@media (max-width: 900px) {
+  .fp-values-grid,
+  .fp-jobs-container {
+    grid-template-columns: 1fr;
+  }
+  .fp-testimonial-box {
+    flex-direction: column;
+  }
+  .fp-testi-left,
+  .fp-testi-right {
+    width: 100%;
+  }
+}

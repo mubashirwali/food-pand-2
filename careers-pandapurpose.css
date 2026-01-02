@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.navbar {
+    background-color: #fff;
+    padding: 15px 50px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+}
+
+.nav-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 35px;
+    margin-right: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s;
+}
+
+.nav-links li a i {
+    font-size: 12px;
+    color: #888;
+}
+
+.nav-links li a:hover {
+    color: #d70f64; /* foodpanda pink */
+}
+
+/* Dropdown Menu styling */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    list-style: none;
+    padding: 10px 0;
+    min-width: 150px;
+    border-radius: 4px;
+    display: none; /* Default hidden */
+    z-index: 100;
+}
+
+.dropdown-menu li {
+    padding: 8px 20px;
+}
+
+.dropdown-menu li a {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Saved Jobs Section */
+.saved-jobs {
+    margin-left: auto;
+}
+
+.saved-jobs a {
+    text-decoration: none;
+    color: #d70f64;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.saved-jobs i {
+    font-size: 18px;
+}
+
+/* Pink Header Banner */
+.pink-banner {
+  background-color: #ff2b85; /* foodpanda pink */
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pink-banner h1 {
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* Main Content Section */
+.purpose-container {
+  background-color: #f7f9fa; /* Light grey background from the image */
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.content-wrapper {
+  max-width: 1100px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+/* Image Styling */
+.image-box {
+  flex: 1;
+}
+
+.image-box img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Text Styling */
+.text-box {
+  flex: 1;
+}
+
+.text-box h2 {
+  color: #ff2b85;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.text-box p {
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Container ko relative rakhna zaroori hai taake panda iske andar set ho */
+.panda-btn-container {
+  position: relative;
+  display: inline-block;
+  margin-top: 50px; /* Thodi jagah upar se taake panda nazar aaye */
+}
+
+/* Panda ki image ki setting */
+.peeking-panda {
+  position: absolute;
+  width: 80px; /* Panda ka size */
+  top: -45px; /* Button ke thoda upar set karne ke liye */
+  left: 15px; /* Left side par adjust karne ke liye */
+  z-index: 0; /* Isko button ke peechhe rakhne ke liye */
+  pointer-events: none; /* Taake panda par click karne se button disturb na ho */
+}
+
+/* Pink Button ka design */
+.panda-button {
+  position: relative;
+  z-index: 1; /* Panda ke upar nazar aane ke liye */
+  background-color: #d70f64; /* foodpanda Pink */
+  color: white;
+  border: none;
+  padding: 15px 35px;
+  border-radius: 50px; /* Full round shape */
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 8px 15px rgba(215, 15, 100, 0.3); /* Soft pink shadow */
+  transition: transform 0.2s ease;
+}
+
+/* Hover effect */
+.panda-button:hover {
+  transform: scale(1.05); /* Click karne par thoda bada hoga */
+  background-color: #be0d59;
+}
+
+/* Footer Exact Styles */
+.main-footer {
+  background: #000;
+  color: #fff;
+  padding: 60px 10% 20px;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.footer-links a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer-search {
+  position: relative;
+  background: #fff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  height: 40px;
+}
+
+.footer-search input {
+  border: none;
+  outline: none;
+  width: 100%;
+  /* height: 30px; */
+}
+
+.footer-search i {
+  color: #333;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+  font-size: 13px;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .pink-banner h1 {
+    font-size: 2rem;
+  }
+
+  .download-btn {
+    margin: 0 auto;
+  }
+}
